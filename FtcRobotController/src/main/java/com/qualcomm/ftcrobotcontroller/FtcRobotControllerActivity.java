@@ -78,7 +78,7 @@ public class FtcRobotControllerActivity extends Activity {
   private static final boolean USE_DEVICE_EMULATION = false;
   private static final int NUM_GAMEPADS = 2;
 
-  public static final String CONFIGURE_FILENAME = "CONFIGURE_FILENAME";
+  public static final String CONFIGURE_FILENAME = "CONFIGURE FILENAME";
 
   protected SharedPreferences preferences;
 
@@ -247,7 +247,7 @@ public class FtcRobotControllerActivity extends Activity {
     switch (item.getItemId()) {
       case R.id.action_restart_robot:
         dimmer.handleDimTimer();
-        Toast.makeText(context, "Restarting Robot", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Restarting - Robot", Toast.LENGTH_SHORT).show();
         requestRobotRestart();
         return true;
       case R.id.action_settings:
